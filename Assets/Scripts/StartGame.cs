@@ -7,6 +7,9 @@ public class StartGame : MonoBehaviour {
 	public GameObject game;
 
 	void OnMouseDown(){
-		game.SetActive (true);
+		if (game.activeSelf)
+			print ("Already playing");
+		else
+			game.SetActive (true);
 	}
 }

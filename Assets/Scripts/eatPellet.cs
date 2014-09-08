@@ -16,7 +16,7 @@ public class eatPellet : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "nom") {
-			print ("hit");
+			displayScore.the_score++;
 			Destroy (other.gameObject);
 		} 
 
